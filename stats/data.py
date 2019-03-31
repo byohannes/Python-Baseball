@@ -20,7 +20,7 @@ identifiers.columns = ['game_id', 'year']
 
 games = pd.concat ([games, identifiers], axis=1, sort=False)
 
-games = games.fillna ('')
+games = games.fillna (' ')
 
 games.loc[:, 'type'] = pd.categorical (games.loc[:, 'type'])
 
